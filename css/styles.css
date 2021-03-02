@@ -10,7 +10,6 @@
 html {
     font-size: 65.5%; /* 1rem = 10px */
     box-sizing: border-box; /* "Hack" Box Model */
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 *, *:before, *:after {
