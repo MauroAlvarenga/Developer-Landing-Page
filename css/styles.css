@@ -1,0 +1,298 @@
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+}
+
+/* Globales */
+html {
+    font-size: 65.5%; /* 1rem = 10px */
+    box-sizing: border-box; /* "Hack" Box Model */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit; /* "Hack" Box Model */
+  }
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3e0 0%, var(--blanco) 100%);
+}
+/** Scroll Snap **/
+.servicios, .navegacion-principal, .formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto; /* Centrado sin Flexbox cuando el padre no tiene Flexbox, elementos tipo block */
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 70%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 2px 15px 2px rgba(112,112,112,0.7);
+    -moz-box-shadow: 0px 2px 15px 2px rgba(112,112,112,0.7);
+    box-shadow: 0px 2px 15px 2px rgba(112,112,112,0.7);
+    background-color: var(--blanco);
+}
+
+.sombreado {
+    box-shadow: 0px 1.5px 15px 1.5px rgba(0, 0, 0, 0.6);
+    /* border: 1px, black; */
+}
+
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Titulos */
+.titulo {
+    margin: .8rem;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+/** Utilidades **/
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto; 
+    }
+}
+.flex {
+    display: flex;
+
+}
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+/* Navegacion Principal */
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 480px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem;
+
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+/* Hero */
+.hero {
+    background-image: url("../img/hero-casero-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0,0,0, 0.6); /* Anterior  */
+    background-color: rgb(0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero p,
+.contenido-hero h2 {
+    color: var(--blanco);
+}
+
+.contenido-hero a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main */
+.main {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Servicios */
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* 1/3 de fraccion = 33% */
+        grid-template-columns: repeat(3, 1fr); /* Sintaxis alternativa */
+        column-gap: 2rem; /* Separar Columnas */
+    }
+}
+
+.un-servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.un-servicio h3 {
+    color: var(--secundario);
+    font-weight: 400;
+}
+
+.un-servicio p {
+    line-height: 2;
+    text-align: center;
+}
+
+.un-servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 40%;
+    /* Centrado vertical Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centrado vertical Flexbox */
+}
+
+/* Contacto */
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* usar el valor mas pequeño */
+    margin: 0 auto; 
+    padding: 2rem;
+    border-radius: 1rem;
+
+    -webkit-box-shadow: 0px 2px 15px 2px rgba(112,112,112,0.7);
+    -moz-box-shadow: 0px 2px 15px 2px rgba(112,112,112,0.7);
+    box-shadow: 0px 2px 15px 2px rgba(112,112,112,0.7);
+}
+
+.formulario fieldset {
+    border: none;
+    -webkit-appearance: none;
+}
+
+.formulario legend {
+    color: var(--primario);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        grid-template-rows: auto auto 20rem;
+    }
+
+    .campos:nth-child(3), .campos:nth-child(4) { /* Selecciono el tercer y 4to hijo de la misma clase */
+        grid-column: 1 / 3;
+    }
+}
+
+.campos {
+    margin-bottom: 1rem;
+}
+
+.campos label {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campos textarea {
+    height: 20rem;
+    resize: none;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/** Footer **/
+.footer {
+    text-align: center;
+    font-weight: 400;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
