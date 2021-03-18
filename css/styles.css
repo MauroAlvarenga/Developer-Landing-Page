@@ -222,6 +222,7 @@ h1, h2, h3 {
 .formulario {
     background-color: var(--gris);
     width: min(60rem, 100%); /* usar el valor mas pequeño */
+    /* width: calc(80% - 50px); */
     margin: 0 auto; 
     padding: 2rem;
     border-radius: 1rem;
