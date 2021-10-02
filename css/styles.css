@@ -29,7 +29,7 @@ body {
 
 .contenedor {
     max-width: 100rem;
-    margin: 0 auto; /* Centrado sin Flexbox cuando el padre no tiene Flexbox, elementos tipo block */
+    margin: 2rem auto; /* Centrado sin Flexbox cuando el padre no tiene Flexbox, elementos tipo block */
 }
 
 .boton {
@@ -147,7 +147,7 @@ h1, h2, h3 {
     background-size: cover;
     height: 45rem;
     position: relative;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .contenido-hero {

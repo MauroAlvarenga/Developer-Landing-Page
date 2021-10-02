@@ -14,14 +14,14 @@
   <body>
 
     <header>
-        <h1 class="titulo">Mauro Alvarenga <br><span>Desarrollador Web</span></h1>
+        <h1 class="titulo" id="start">Mauro Alvarenga <br><span>Desarrollador Web</span></h1>
     </header>
 
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre Mi</a>
-            <a href="#">Proyectos</a>
+            <a href="./index.html">Inicio</a>
+            <a href="./about.html">Sobre Mi</a>
+            <a href="https://mauro-alvarenga-websites.netlify.app">Proyectos</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </div> <!-- nav-bg (fondo)-->
@@ -48,7 +48,7 @@
 
         <div class="servicios">
             <section class="un-servicio">
-                <h3>Diseño Web</h3>
+                <h3>Maquetado</h3>
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -58,8 +58,7 @@
                     </svg>
                 </div>
                 <p>
-                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam
-                    finibus rhoncus urna, in vestibulum urna tempor sit amet.
+                    Maquetado de sitios web con HTML y CSS, programacion con JavaScript.
                 </p>
             </section>
 
@@ -74,8 +73,7 @@
                     </svg>
                 </div>
                 <p>
-                Nulla sed faucibus est, vitae lobortis ipsum. Nunc vel rutrum mauris.
-                Quisque purus lorem, rhoncus ut mi a, venenatis tempus lacus.
+                Desarrollo de aplicaciones web, incluyendo frontend y backend.
                 </p>
             </section>
 
@@ -99,9 +97,7 @@
                     </svg>
                 </div> <!-- .iconos -->
                 <p>
-                Proin in dapibus sapien. Morbi porta nunc eget augue elementum, eget
-                tempor erat hendrerit. Nam sit amet nulla sit amet dolor sollicitudin
-                euismod ut ac sem.
+                Desarrollo de aplicaciones moviles. Proximamente.
                 </p>
             </section>
         </div> <!-- .servicios -->
@@ -118,22 +114,22 @@
                     <div class="contenedor-campos">
                         <div class="campos">
                             <label for="">Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                            <input class="input-text" type="text" placeholder="Tu Nombre" required>
                         </div>
     
                         <div class="campos">
-                            <label for="">Telefono</label>
+                            <label for="">Telefono (Opcional)</label>
                             <input class="input-text" type="tel" placeholder="Tu Telefono">
                         </div>
     
                         <div class="campos">
                             <label for="">Correo</label>
-                            <input class="input-text" type="email" name="" id="" placeholder="Tu Email">
+                            <input class="input-text" type="email" name="" id="" placeholder="Tu Email" required>
                         </div>
     
                         <div class="campos">
                             <label for="">Mensaje</label>
-                            <textarea class="input-text "placeholder="Tu Mensaje..."></textarea>
+                            <textarea class="input-text "placeholder="Tu Mensaje..." required></textarea>
                         </div>
                     </div> <!-- .contenedor-campos-->
 
