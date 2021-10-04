@@ -21,15 +21,31 @@ body {
     font-family: 'Raleway', sans-serif;
     background-image: linear-gradient(to top, #dfe9f3e0 0%, var(--blanco) 100%);
 }
-/** Scroll Snap **/
+/* * Scroll Snap *
 .servicios, .navegacion-principal, .formulario {
     scroll-snap-align: center;
     scroll-snap-stop: always;
+} */
+
+a { 
+    text-decoration: none;
+    color: var(--secundario);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--primario);
 }
 
 .contenedor {
     max-width: 100rem;
-    margin: 2rem auto; /* Centrado sin Flexbox cuando el padre no tiene Flexbox, elementos tipo block */
+    margin: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        margin: 2rem auto; /* Centrado sin Flexbox cuando el padre no tiene Flexbox, elementos tipo block */
+    }
 }
 
 .boton {
@@ -113,9 +129,11 @@ h1, h2, h3 {
 }
 
 .navegacion-principal {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100rem;
 }
 
 @media (min-width: 480px) {
@@ -288,11 +306,39 @@ h1, h2, h3 {
 .footer {
     text-align: center;
     font-weight: 400;
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
 }
 
 .redes {
     display: flex;
     justify-content: center;
+}
+
+/** Sobre mi **/ 
+.about { 
+    text-align: center;
+}
+@media (min-width: 1024px) {
+    .about {
+        text-align: justify;
+    }
+}
+.sobre-mi {
+    line-height: 2;
+}
+@media (min-width: 1024px) {
+    .sobre-mi {
+        padding: 0 1.5rem;
+    }
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+}
+
+.foto img {
+    height: 30rem;
+    border-radius: 15%;
+    border: solid 1px #a2a2a2;
+    filter: drop-shadow(0 0 6px rgba(0, 0 , 0, 0.5));
 }
