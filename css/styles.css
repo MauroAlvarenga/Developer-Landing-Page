@@ -392,13 +392,19 @@ h1, h2, h3 {
     color: #4B8BBE;
 }
 .fa-git-alt {
-    font-size: 8rem;
+    /* font-size: 8rem; */
     color: #f34f29;
 }
 .fa-git {
-    font-size: 8rem;
+    /* font-size: 8rem; */
     color: #3d2d00;
 }
 .fa-terminal {
-    font-size: 8rem;
+    /* font-size: 8rem; */
+}
+.fa-bootstrap { 
+    color: #602C50;
+}
+.fa-swift { 
+    color: #fd9426;
 }
